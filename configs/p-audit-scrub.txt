@@ -1,0 +1,7 @@
+Audit task (read-only, no network, no file writes). The working directory contains sample50.jsonl: 50 de-identified decision records (fields: id, gate, state, question, options, label). They were produced by replacing private identifiers with placeholders (project_N, bot_N, persona_N, node_N, person_N, vendor_N, month-YYYY-MM). Your job is adversarial: try to re-identify anything.
+
+For every record, look for and list any string that could identify a real organisation, person, machine, hostname, IP address, file path, internal project or product code name, credential, email, URL, or a date more precise than a month. Public product, vendor, library and model names (for example NVIDIA, Docker, vLLM, Qwen, Postgres) are allowed and should not be reported. Also report any placeholder that is inconsistent (the same placeholder apparently used for two different things, or an obviously un-replaced private name next to a placeholder).
+
+Then answer three questions with evidence: (1) Can you infer which organisation or person produced these records? (2) Can you infer the names of any internal systems or projects? (3) Do any records leak their own label through the state text (for example the state quotes the decision)?
+
+Output: a table with one row per finding (record id, quoted string, category, why it is identifying), then the three answers, then the last line: AUDIT: CLEAN or AUDIT: LEAKS (n).

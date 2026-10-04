@@ -1,0 +1,20 @@
+Audit task (read-only, no network, no file writes). The working directory contains sample50.jsonl: 50 de-identified decision records (fields: id, gate, state, question, options, label). Private identifiers were replaced with placeholders (project_N, bot_N, persona_N, node_N, person_N, vendor_N, ref_N, month-YYYY-MM). Your job is adversarial: try to re-identify anything. Judge against the acceptance rule below, exactly as written.
+
+MUST be reported (hard leaks):
+- a real organisation or person name, or anything that lets you infer who produced the records
+- hostnames, IP addresses, credentials, tokens, emails, private URLs
+- internal system, project, bot or product code names that are not public products, and internal goal or task slugs
+- dates more precise than a month
+- a placeholder used for two different things inside the SAME record, or a malformed placeholder (for example project_N59, bot_25_66, node_Ns)
+- a state that leaks its own label (the state quotes or names the chosen option in a way that gives the answer away)
+
+Allowed by the rule (do NOT report these, they are not leaks):
+- public product, vendor, library, model, dataset and benchmark names (NVIDIA, Docker, vLLM, Qwen, ChartQA, ...)
+- public upstream GitHub accounts or repository names of third parties
+- generic file names and relative paths inside public repositories (README.md, LICENSE, docs/results.md, scripts/x.py), public domains (www.apache.org), image tags, commit hashes
+- project_0: by design the bucket for "an unspecified project"; it may appear in many records and does not need to be consistent across records
+- ref_N: opaque codes for work items, experiments or pseudonymised names; different N are different things, consistency across records is not required
+
+For every hard leak, give: record id, the quoted string, category, why it identifies. Then answer with evidence: (1) Can you infer which organisation or person produced these records? (2) Can you infer the names of any internal systems or projects? (3) Which records leak their own label through the state text? You may add a separate short list of "notes" for allowed items you still consider worth a look, but notes do not count.
+
+Output: the hard-leak table, the three answers, the optional notes, then the last line exactly: AUDIT: CLEAN or AUDIT: LEAKS (n), where n counts hard leaks only.

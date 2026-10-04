@@ -1,0 +1,7 @@
+# Example only. The first pattern line lists the fixture's synthetic names: replace it with your own private identifier list.
+# The other lines are generic shapes (private addresses, home paths, key prefixes) you can keep.
+Acme|Zephyr|Orion|robot-7|FictionalPerson|rack-b2
+192\.168\.[0-9]+\.[0-9]+|10\.[0-9]+\.[0-9]+\.[0-9]+|172\.(1[6-9]|2[0-9]|3[01])\.[0-9]+\.[0-9]+
+/(?:Users|home)/[^/\s]+
+[s]k-[A-Za-z0-9]{20,}|[A]KIA[A-Z0-9]{16}|[g]hp_[A-Za-z0-9]{30,}|[B]earer [A-Za-z0-9._~+/-]{20,}|[-]----BEGIN (?:[A-Z]+ )?PRIVATE KEY-----
+SyntheticSystem|SYNTHETIC_ALIAS

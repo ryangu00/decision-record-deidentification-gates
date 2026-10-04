@@ -1,0 +1,36 @@
+{"ts": "2026-08-01", "goal": "plain-docs-cleanup", "task": "t0", "shape": "batch", "declared": "self", "actual": "sub-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-02", "goal": "plain-docs-cleanup", "task": "Move Zephyr job 1 to rack-b2 and ask FictionalPerson to review", "shape": "risky", "declared": "self", "actual": "local-model", "result": "ok", "rework": false}
+{"ts": "2026-08-03", "goal": "zephyr-migration", "task": "t2", "shape": "batch", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-04", "goal": "plain-docs-cleanup", "task": "Move Zephyr job 3 to rack-b2 and ask FictionalPerson to review", "shape": "small", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-05", "goal": "zephyr-migration", "task": "t4", "shape": "batch", "declared": "self", "actual": "cheap-cloud-batch", "result": "ok", "rework": false}
+{"ts": "2026-08-06", "goal": "zephyr-migration", "task": "Move Zephyr job 5 to rack-b2 and ask FictionalPerson to review", "shape": "batch", "declared": "self", "actual": "local-model", "result": "ok", "rework": false}
+{"ts": "2026-08-07", "goal": "zephyr-migration", "task": "t6", "shape": "risky", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-08", "goal": "zephyr-migration", "task": "Move Zephyr job 7 to rack-b2 and ask FictionalPerson to review", "shape": "risky", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-09", "goal": "orion-benchmark", "task": "t8", "shape": "batch", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-10", "goal": "orion-benchmark", "task": "Move Zephyr job 9 to rack-b2 and ask FictionalPerson to review", "shape": "small", "declared": "self", "actual": "self", "result": "ok", "rework": false}
+{"ts": "2026-08-11", "goal": "zephyr-migration", "task": "t10", "shape": "risky", "declared": "self", "actual": "local-model", "result": "ok", "rework": false}
+{"ts": "2026-08-12", "goal": "orion-benchmark", "task": "Move Zephyr job 11 to rack-b2 and ask FictionalPerson to review", "shape": "small", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-13", "goal": "zephyr-migration", "task": "t12", "shape": "small", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-14", "goal": "zephyr-migration", "task": "Move Zephyr job 13 to rack-b2 and ask FictionalPerson to review", "shape": "small", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-15", "goal": "orion-benchmark", "task": "t14", "shape": "batch", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-16", "goal": "plain-docs-cleanup", "task": "Move Zephyr job 15 to rack-b2 and ask FictionalPerson to review", "shape": "risky", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-17", "goal": "zephyr-migration", "task": "t16", "shape": "risky", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-18", "goal": "orion-benchmark", "task": "Move Zephyr job 17 to rack-b2 and ask FictionalPerson to review", "shape": "batch", "declared": "self", "actual": "self", "result": "ok", "rework": false}
+{"ts": "2026-08-19", "goal": "orion-benchmark", "task": "t18", "shape": "batch", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-20", "goal": "zephyr-migration", "task": "Move Zephyr job 19 to rack-b2 and ask FictionalPerson to review", "shape": "batch", "declared": "self", "actual": "self", "result": "ok", "rework": false}
+{"ts": "2026-08-21", "goal": "orion-benchmark", "task": "t20", "shape": "batch", "declared": "self", "actual": "local-model", "result": "ok", "rework": false}
+{"ts": "2026-08-22", "goal": "plain-docs-cleanup", "task": "Move Zephyr job 21 to rack-b2 and ask FictionalPerson to review", "shape": "small", "declared": "self", "actual": "local-model", "result": "ok", "rework": false}
+{"ts": "2026-08-23", "goal": "plain-docs-cleanup", "task": "t22", "shape": "risky", "declared": "self", "actual": "sub-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-24", "goal": "zephyr-migration", "task": "Move Zephyr job 23 to rack-b2 and ask FictionalPerson to review", "shape": "batch", "declared": "self", "actual": "sub-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-25", "goal": "orion-benchmark", "task": "t24", "shape": "batch", "declared": "self", "actual": "sub-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-26", "goal": "zephyr-migration", "task": "Move Zephyr job 25 to rack-b2 and ask FictionalPerson to review", "shape": "batch", "declared": "self", "actual": "cheap-cloud-batch", "result": "ok", "rework": false}
+{"ts": "2026-08-27", "goal": "plain-docs-cleanup", "task": "t26", "shape": "small", "declared": "self", "actual": "self", "result": "ok", "rework": false}
+{"ts": "2026-08-28", "goal": "orion-benchmark", "task": "Move Zephyr job 27 to rack-b2 and ask FictionalPerson to review", "shape": "small", "declared": "self", "actual": "sub-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-01", "goal": "orion-benchmark", "task": "t28", "shape": "small", "declared": "self", "actual": "local-model", "result": "ok", "rework": false}
+{"ts": "2026-08-02", "goal": "orion-benchmark", "task": "Move Zephyr job 29 to rack-b2 and ask FictionalPerson to review", "shape": "batch", "declared": "self", "actual": "cheap-cloud-batch", "result": "ok", "rework": false}
+{"ts": "2026-08-03", "goal": "plain-docs-cleanup", "task": "t30", "shape": "small", "declared": "self", "actual": "cheap-cloud-batch", "result": "ok", "rework": false}
+{"ts": "2026-08-04", "goal": "zephyr-migration", "task": "Move Zephyr job 31 to rack-b2 and ask FictionalPerson to review", "shape": "risky", "declared": "self", "actual": "second-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-05", "goal": "plain-docs-cleanup", "task": "t32", "shape": "small", "declared": "self", "actual": "self", "result": "ok", "rework": false}
+{"ts": "2026-08-06", "goal": "zephyr-migration", "task": "Move Zephyr job 33 to rack-b2 and ask FictionalPerson to review", "shape": "batch", "declared": "self", "actual": "sub-agent", "result": "ok", "rework": false}
+{"ts": "2026-08-07", "goal": "plain-docs-cleanup", "task": "t34", "shape": "batch", "declared": "self", "actual": "local-model", "result": "ok", "rework": false}
+{"ts": "2026-08-08", "goal": "orion-benchmark", "task": "Move Zephyr job 35 to rack-b2 and ask FictionalPerson to review", "shape": "batch", "declared": "self", "actual": "self", "result": "ok", "rework": false}

@@ -1,0 +1,74 @@
+{
+  "lanes": [
+    "self",
+    "second-agent",
+    "sub-agent",
+    "cheap-cloud-batch",
+    "cheap-cloud-review-loop",
+    "cheap-cloud-autonomous",
+    "local-model",
+    "workflow",
+    "other"
+  ],
+  "lane_rules": [
+    [
+      "self",
+      [
+        "self"
+      ]
+    ],
+    [
+      "second-agent",
+      [
+        "second-agent"
+      ]
+    ],
+    [
+      "sub-agent",
+      [
+        "sub-agent"
+      ]
+    ],
+    [
+      "cheap-cloud-batch",
+      [
+        "cheap-cloud-batch"
+      ]
+    ],
+    [
+      "cheap-cloud-review-loop",
+      [
+        "cheap-cloud-review-loop"
+      ]
+    ],
+    [
+      "cheap-cloud-autonomous",
+      [
+        "cheap-cloud-autonomous"
+      ]
+    ],
+    [
+      "local-model",
+      [
+        "local-model"
+      ]
+    ],
+    [
+      "workflow",
+      [
+        "workflow"
+      ]
+    ]
+  ],
+  "code_pattern": "(?<![A-Za-z0-9_])(?:[tT]\\d[A-Za-z0-9]*(?:\\s?v\\d)?|demo_ref_\\w+)(?![A-Za-z0-9_])",
+  "named_entities": [
+    [
+      "SyntheticSystem",
+      "project"
+    ]
+  ],
+  "alias_pattern": "(?<![A-Za-z0-9_])SYNTHETIC_ALIAS(?![A-Za-z0-9_])",
+  "severity_pattern": "^SEV-(?:MAJOR|MINOR)$",
+  "goal_pattern": "^(Goal: )(.+?)\\s*$",
+  "lane_words": "second-agent|sub-agent|cloud|local model|workflow|orchestrat|cheap|review loop|autonomous|delegat"
+}
